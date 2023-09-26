@@ -13,35 +13,51 @@ public:
 };
 
 //  лас Car, конкретний тип транспортного засобу
-class Car : public Vehicle {
+class Car : public Vehicle 
+{
 public:
-    Vehicle* clone() const override {
+    Vehicle* clone() const override 
+    {
         return new Car(*this);
     }
-    void start() override {
+
+    void start() override 
+    {
         std::cout << "Car started." << std::endl;
     }
-    void stop() override {
+
+    void stop() override 
+    {
         std::cout << "Car stopped." << std::endl;
     }
-    void accelerate() override {
+
+    void accelerate() override 
+    {
         std::cout << "Car accelerated." << std::endl;
     }
 };
 
 //  лас Motorcycle, ще один конкретний тип транспортного засобу
-class Motorcycle : public Vehicle {
+class Motorcycle : public Vehicle 
+{
 public:
-    Vehicle* clone() const override {
+    Vehicle* clone() const override 
+    {
         return new Motorcycle(*this);
     }
-    void start() override {
+
+    void start() override 
+    {
         std::cout << "Motorcycle started." << std::endl;
     }
-    void stop() override {
+
+    void stop() override 
+    {
         std::cout << "Motorcycle stopped." << std::endl;
     }
-    void accelerate() override {
+
+    void accelerate() override 
+    {
         std::cout << "Motorcycle accelerated." << std::endl;
     }
 };
